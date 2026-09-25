@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'delivery_management_system.wsgi.application'
+WSGI_APPLICATION = 'delivery_management_system.wsgi.app'
 
 DATABASES = {
     'default': {
