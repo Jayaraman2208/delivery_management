@@ -1,0 +1,11 @@
+﻿venv/
+env/
+.env
+db.sqlite3
+celery_data/
+logs/
+media/
+staticfiles/
+__pycache__/
+*.pyc
+.git/
