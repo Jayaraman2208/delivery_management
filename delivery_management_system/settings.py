@@ -55,7 +55,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'delivery_management_system.wsgi.application'
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
