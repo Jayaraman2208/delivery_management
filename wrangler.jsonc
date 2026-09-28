@@ -1,0 +1,11 @@
+{
+  "name": "delivery-management",
+  "main": "src/index.py",
+  "compatibility_date": "2026-09-27",
+  "compatibility_flags": [
+    "python_workers"
+  ],
+  "assets": {
+    "directory": "./staticfiles"
+  }
+}
