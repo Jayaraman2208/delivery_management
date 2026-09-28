@@ -14,10 +14,8 @@ ALLOWED_HOSTS = config(
     default='localhost,127.0.0.1'
 ).split(',')
 
-# Railway automatically injects RAILWAY_STATIC_URL — add it to allowed hosts
-RAILWAY_STATIC_URL = config('RAILWAY_STATIC_URL', default=None)
-if RAILWAY_STATIC_URL:
-    ALLOWED_HOSTS.append(RAILWAY_STATIC_URL)
+# Always allow Railway domains automatically
+ALLOWED_HOSTS += ['.up.railway.app', '.railway.app']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
