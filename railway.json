@@ -4,7 +4,7 @@
     "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput"
   },
   "deploy": {
-    "startCommand": "gunicorn delivery_management_system.wsgi --bind 0.0.0.0:$PORT --workers 2 --timeout 120",
+    "startCommand": "python -m gunicorn delivery_management_system.wsgi --bind 0.0.0.0:$PORT --workers 1 --timeout 120",
     "healthcheckPath": "/",
     "healthcheckTimeout": 30,
     "restartPolicyType": "ON_FAILURE",
