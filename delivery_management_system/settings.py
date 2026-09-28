@@ -14,8 +14,8 @@ ALLOWED_HOSTS = config(
     default='localhost,127.0.0.1'
 ).split(',')
 
-# Always allow Railway domains automatically
-ALLOWED_HOSTS += ['.up.railway.app', '.railway.app']
+# Always allow Railway and PythonAnywhere domains automatically
+ALLOWED_HOSTS += ['.up.railway.app', '.railway.app', '.pythonanywhere.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
